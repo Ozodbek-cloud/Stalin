@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1f242d;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: white;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    padding: 60px 9% 0;
+}
+
+.home-info h1 {
+    font-size: 50px;
+}
+
+.home-info h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.home-info p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    gap: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    background: red;
+    border: 2px solid red;
+    border-radius: 40px;
+    box-shadow: 0 0 10px red;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: red;
+    box-shadow: 0 0 10px red;
+}
+
+.home-info .btn-sci .sci {
+    margin-left: 20px;
+}
+
+.sci {
+    display: flex;
+    margin-top: 15px;
+}
+
+.sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 20px;
+    color: red;
+    margin: 0 8px;
+    transition: 0.5s;
+}
+
+.sci a:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 10px red;
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, red);
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+}
